@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Website</title>
+   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Order</a>
+      <a href="#">Food</a>
+      <a href="#">Restaurant</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="menu-btn" aria-label="menu button" role="button">
+      <img src="images/menu-bar.png" alt="menu">
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>LOREM IPSUM</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae 
+        dolor rhoncus tristique. Maecenas metus quam, rhoncus euismod lorem in, 
+        sollicitudin viverra eros. Donec dictum luctus quam ut tristique. Curabitur 
+        nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat 
+        pretium. Sed pulvinar, massa ac porta viverra.
+      </p>
+      <button class="clickMe-btn">Click Me</button>
+    </div>
+
+    <div class="hero-img">
+      <img src="images/pexels-robin-stickel-70497.jpg" alt="Burger and Fries">
+    </div>
+  </div>
+
+  <!-- Second Section -->
+  <div class="second-section">
+    <div class="image-grid">
+      <img src="images/pexels-rachel-claire-6752433.jpg" alt="Restaurant Image 1" class="img1">
+      <img src="images/pexels-eva-bronzini-6141651.jpg" alt="Restaurant Image 2" class="img2">
+      <img src="images/pexels-mister-mister-3434523.jpg" alt="Restaurant Image 3" class="img3">
+    </div>
+
+    <div class="text-card">
+      <p>LOREM IPSUM</p>
+      <h1>LOREM IPSUM<br>SET ADEMIR</h1>
+      <a href="#" class="cta-link">
+        Click <img src="images/icons8-arrow-30.png" alt="" style="width: 16px;">
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+      });
+    });
+  </script>
+</body>
+</html>
